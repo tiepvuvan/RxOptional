@@ -1,15 +1,15 @@
 import Foundation
 
 public enum RxOptionalError: Swift.Error, CustomStringConvertible {
-    case foundNilWhileUnwrappingOptional(Any.Type)
-    case emptyOccupiable(Any.Type)
+    case FoundNilWhileUnwrappingOptional(Any.Type)
+    case EmptyOccupiable(Any.Type)
 
     public var description: String {
         switch self {
-        case .foundNilWhileUnwrappingOptional(let type):
-           return "Found nil while trying to unwrap type <\(String(type))>"
-        case .emptyOccupiable(let type):
-            return "Empty occupiable of type <\(String(type))>"
+        case .FoundNilWhileUnwrappingOptional(let type):
+            return "Found nil while trying to unwrap type <\(String(describing: type))>"
+        case .EmptyOccupiable(let type):
+            return "Empty occupiable of type <\(String(describing: type))>"
         }
     }
 }
