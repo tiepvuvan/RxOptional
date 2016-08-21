@@ -30,7 +30,7 @@ Pod::Spec.new do |s|
 
   s.source_files = 'Source/**/*'
 
-  s.dependency 'RxSwift', git: 'https://github.com/ReactiveX/RxSwift', branch: 'swift-3.0'
-  s.dependency 'RxCocoa', git: 'https://github.com/ReactiveX/RxSwift', branch: 'swift-3.0'
+  s.dependency 'RxSwift', :git 'https://github.com/ReactiveX/RxSwift', :branch 'swift-3.0'
+  s.dependency 'RxCocoa', :git 'https://github.com/ReactiveX/RxSwift', :branch 'swift-3.0'
   s.frameworks = 'Foundation'
 end
